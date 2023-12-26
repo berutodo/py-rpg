@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main>
+        <h1>Bem vindo ao mundo de Knight of Chaos, aqui você poderá viver a magia de Avalon.</h1>
+        <div>
+            <a href="{{ url_for( 'criar_personagem') }}"><button>Criar personagem</button></a>
+            <button>Importar Personagem</button>
+        </div>
+
+    </main>
+</body>
+
+</html>

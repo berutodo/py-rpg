@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Batalha RPG</title>
+</head>
+
+<body>
+    <h1>Batalha</h1>
+    <p>{{ personagem.nome }} - PV: {{ personagem.pontos_vida }} | {{ oponente.nome }} - PV: {{ oponente.pontos_vida }}</p>
+    {% if not personagem.esta_vivo() %}
+    <p>{{ personagem.nome }} foi derrotado!</p>
+    {% elif not oponente.esta_vivo() %}
+    <p>{{ oponente.nome }} foi derrotado!</p>
+    {% endif %}
+</body>
+
+</html>
